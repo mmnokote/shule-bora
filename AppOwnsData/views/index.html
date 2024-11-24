@@ -14,19 +14,23 @@ Licensed under the MIT license. -->
     <link rel="stylesheet" href="../public/css/index.css">
     <title>Tamisemi Education Dashboard</title>
  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
         /* Ensure body and html take full height of the viewport */
         body, html {
-            height: 100%;
-            margin: 0;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
 
         /* Make the header full width and center content */
         header {
+            position: fixed;
             text-align: center;
             padding: 20px;
-            background-color: #033b4f;
+            background-color: #0984e3;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
         }
@@ -59,7 +63,7 @@ Licensed under the MIT license. -->
             text-align: center;
         }
     </style>
-   
+
 </head>
 
 <body>
@@ -68,7 +72,7 @@ Licensed under the MIT license. -->
             TAMISEMI EDUCATION DATA
         </p>
     </header>
-    
+
     <main>
         <!-- Full-page report container -->
         <section id="report-container" style="width: 100%; height: 90vh;" class=" col-lg-12 col-md-12 col-sm-12 mt-5" >
@@ -80,7 +84,7 @@ Licensed under the MIT license. -->
             <!-- Error message content will go here -->
         </section>
     </main>
-   
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/powerbi.min.js"></script>
