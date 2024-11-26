@@ -26,9 +26,14 @@ $.ajax({
             embedUrl: embedData.embedUrl[0].embedUrl,
 
             // Enable this setting to remove gray shoulders from embedded report
-            // settings: {
-            //     background: models.BackgroundType.Transparent
-            // }
+            settings: {
+                background: models.BackgroundType.Transparent,
+                panes:{
+                    pageNavigation:{
+                        visible:false
+                    }
+                }
+            }
         };
 
         // Use the token expiry to regenerate Embed token for seamless end user experience
